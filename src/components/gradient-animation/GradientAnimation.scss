@@ -1,0 +1,6 @@
+@import '../../styles/mixins';
+.gradient-animation {
+  height: 5px;
+  position: relative;
+  @include gradientAnimation;
+}

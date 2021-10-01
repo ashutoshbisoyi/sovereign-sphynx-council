@@ -1,0 +1,122 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+.mint {
+  background-image: url('../../assets/space.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+  h2 {
+    text-align: center;
+    color: $white;
+    margin-bottom: 2em;
+  }
+  .counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    margin: auto;
+
+    button {
+      box-shadow: none;
+      background-color: transparent;
+    }
+
+    .counter,
+    .total {
+      min-width: 200px;
+      border: 2px solid $white;
+      padding: 0.4em;
+      border-radius: 5px;
+      color: $white;
+    }
+
+    .counter {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .total {
+      padding: 1em;
+      margin-bottom: 3em;
+    }
+
+    .gradient-container {
+      position: relative;
+      @include gradientAnimation;
+      color: $white;
+      padding: 0.2em;
+      border-radius: 12px;
+
+      button {
+        position: relative;
+        background-color: $dark;
+        box-shadow: none;
+        z-index: 99;
+      }
+    }
+  }
+
+  .max {
+    width: fit-content;
+    margin: 2em 0 2em auto;
+  }
+
+  .cta {
+    button {
+      width: 100%;
+      background-color: #000 !important;
+      padding: 1em;
+    }
+  }
+
+  .progress {
+    position: relative;
+    margin: 5em auto 0 auto;
+    max-width: 800px;
+    background: $white;
+    height: 40px;
+    border-radius: 11px;
+    .bar {
+      background: linear-gradient(
+        93.01deg,
+        #71efa5 2.48%,
+        #0334dc 59.29%,
+        #dcba75 99.33%,
+        #9a0b15 155.01%,
+        #fced22 194.11%,
+        #fc6ef6 235.2%,
+        #ed6e42 284.2%
+      );
+    }
+    h5 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $dark;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mint {
+    .img-container {
+      img {
+        width: 100%;
+      }
+    }
+    .counter-container {
+      width: 100%;
+      margin-top: 3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2em;
+    }
+    .progress {
+      margin-top: 30px;
+    }
+  }
+}

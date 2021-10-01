@@ -1,0 +1,52 @@
+@import './variables';
+@import './mixins';
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+body {
+  background-color: $dark;
+  color: $white;
+}
+button {
+  @include justify-center;
+  background-color: $gray;
+  color: $white;
+  padding: 0.5em 1em;
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  box-shadow: 0px 2px 0px $green;
+  &:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+}
+h1,
+h2,
+h3 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+.slick-dots {
+  bottom: -70px !important;
+  li {
+    button {
+      background: $white !important;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+    }
+    &.slick-active {
+      button {
+        background: $green !important;
+      }
+    }
+  }
+}
+a {
+  color: inherit;
+}

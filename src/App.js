@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import GradientAnimation from './components/gradient-animation/GradientAnimation';
+import Hero from './components/hero/Hero';
+import Mint from './components/mint/Mint';
+import NavigationBar from './components/navigation-bar/NavigationBar';
+import Roadmap from './components/roadmap/Roadmap';
+import Why from './components/why/Why';
+import './styles/main.scss';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Faqs from './components/faqs/Faqs';
+import Team from './components/team/Team';
+import Footer from './components/footer/Footer';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavigationBar />
+      <GradientAnimation />
+      <Hero />
+      <Why />
+      <Mint />
+      <Roadmap />
+      <Faqs />
+      <Team />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

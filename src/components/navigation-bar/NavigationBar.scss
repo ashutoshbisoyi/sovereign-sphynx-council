@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+.navbar {
+  background: $dark;
+  padding: 1em 0;
+  .nav-link {
+    color: $white !important;
+    cursor: pointer;
+  }
+  button {
+    .dot {
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background-color: $danger;
+      margin-right: 0.6em;
+    }
+  }
+}

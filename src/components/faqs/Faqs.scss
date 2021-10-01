@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+.faqs {
+  padding: 5em 0;
+  h2 {
+    text-align: center;
+    color: $green;
+    margin-bottom: 2em;
+  }
+  ul {
+    border: 1px solid $green;
+    width: 60%;
+    margin: 0 auto;
+    padding: 3em 2em;
+    list-style: none;
+    li {
+      margin-bottom: 3em;
+      h5 {
+        color: $green;
+        margin-bottom: 0.5em;
+      }
+      p {
+        font-size: 1.2em;
+        a {
+          color: #7b61ff;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $md-breakpoint) {
+  .faqs {
+    ul {
+      width: 100%;
+    }
+  }
+}

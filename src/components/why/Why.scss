@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+.why {
+  padding: 5em 0;
+  h2 {
+    color: $green;
+    margin-bottom: 1em;
+  }
+  p {
+    margin-bottom: 1.5em;
+  }
+  img {
+    width: 60%;
+    border-radius: 50%;
+  }
+}
