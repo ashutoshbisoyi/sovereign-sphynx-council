@@ -24,7 +24,7 @@ const Mint = () => {
 
           <button className='total'>Total: 0.08 Ξ </button>
           <div className='gradient-container cta'>
-            <button className='primary'>Mint Now</button>
+            <button className='primary'>Register to Mint</button>
           </div>
           <div className='gradient-container max'>
             <button>Max 20</button>
