@@ -10,12 +10,16 @@ const Footer = () => {
         <img src={logo} alt='logo' className='img-fluid' />
         <h5 className='my-4 my-md-0'>Verify Smart Contract</h5>
         <div className='btn-container'>
-          <button>
-            <img src={discord} alt='discord' className='img-fluid' />
-          </button>
-          <button>
-            <img src={twitter} alt='discord' className='img-fluid' />
-          </button>
+          <a href='https://discord.gg/ZEuDaFk4qz' target='_null'>
+            <button>
+              <img src={discord} alt='discord' className='img-fluid' />
+            </button>
+          </a>
+          <a href='https://twitter.com/sphynxcouncil' target='_null'>
+            <button>
+              <img src={twitter} alt='discord' className='img-fluid' />
+            </button>
+          </a>
         </div>
       </div>
     </footer>

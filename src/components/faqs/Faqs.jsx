@@ -36,8 +36,10 @@ const Faqs = () => {
             <p>
               {' '}
               Have more questions? Come through to our{' '}
-              <a href='https://amigo-nft.netlify.app/'>Discord</a> to learn
-              more.
+              <a href='https://discord.gg/ZEuDaFk4qz' target='_null'>
+                Discord
+              </a>{' '}
+              to learn more.
             </p>
           </li>
         </ul>

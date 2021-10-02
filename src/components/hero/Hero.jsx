@@ -24,15 +24,28 @@ const Hero = () => {
                 bonus benefits.
               </p>
               <div className='btn-container'>
-                <button>
-                  <img src={discord} alt='discord' className='img-fluid me-2' />{' '}
-                  <span className='d-none d-sm-inline'>Join</span> Discord
-                </button>
-                <button>
-                  <img src={twitter} alt='discord' className='img-fluid me-2' />
-                  <span className='d-none d-sm-inline'>Follow us on</span>{' '}
-                  Twitter
-                </button>
+                <a href='https://discord.gg/ZEuDaFk4qz' target='_null'>
+                  <button>
+                    <img
+                      src={discord}
+                      alt='discord'
+                      className='img-fluid me-2'
+                    />{' '}
+                    <span className='d-none d-sm-inline me-1'>Join </span>{' '}
+                    Discord
+                  </button>
+                </a>
+                <a href='https://twitter.com/sphynxcouncil' target='_null'>
+                  <button>
+                    <img
+                      src={twitter}
+                      alt='discord'
+                      className='img-fluid me-2'
+                    />
+                    <span className='d-none d-sm-inline'>Follow us on</span>{' '}
+                    Twitter
+                  </button>
+                </a>
               </div>
             </div>
           </div>
