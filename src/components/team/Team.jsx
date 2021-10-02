@@ -5,6 +5,7 @@ import member2 from '../../assets/member2.png';
 import member3 from '../../assets/member3.png';
 import member4 from '../../assets/member4.png';
 import member5 from '../../assets/member5.png';
+import StarBg from '../star-bg/StarBg';
 const Team = () => {
   const teamMembers = [
     {
@@ -30,6 +31,7 @@ const Team = () => {
   ];
   return (
     <section className='container-fluid team' id='team'>
+      <StarBg />
       <div className='container'>
         <h2 className='mt-5 mt-md-0'>Team</h2>
         <div className='team-container'>

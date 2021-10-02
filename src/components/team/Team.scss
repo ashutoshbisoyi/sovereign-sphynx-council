@@ -1,10 +1,13 @@
 @import '../../styles/variables';
 .team {
   padding: 100px 0;
-  background-color: transparent;
-  background-image: url('../../assets/space.png');
-  background-size: 100% 100%;
-  background-position: center;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+  .container {
+    position: relative;
+    z-index: 9;
+  }
   h2 {
     color: $white;
     margin-bottom: 2em;

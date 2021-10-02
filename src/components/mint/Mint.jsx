@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import './Mint.scss';
 import plus from '../../assets/plus.svg';
 import minus from '../../assets/minus.svg';
+import StarBg from '../star-bg/StarBg';
 const Mint = () => {
   const [count, setCount] = useState(1);
+
   return (
     <section className='container-fluid mint' id='mint'>
+      <StarBg />
       <div className='container'>
         <h2>Mint a Sphynx</h2>
         <div className='counter-container'>
@@ -18,13 +21,13 @@ const Mint = () => {
               <img src={plus} alt='minus' className='img-fluid' />
             </button>
           </div>
-          <div className='gradient-container max'>
-            <button>Max 20</button>
-          </div>
 
           <button className='total'>Total: 0.08 Ξ </button>
           <div className='gradient-container cta'>
             <button className='primary'>Mint Now</button>
+          </div>
+          <div className='gradient-container max'>
+            <button>Max 20</button>
           </div>
         </div>
         <div className='progress'>

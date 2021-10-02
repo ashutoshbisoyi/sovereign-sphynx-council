@@ -1,6 +1,6 @@
 import React from 'react';
 import './Why.scss';
-import whyAnimation from '../../assets/why.png';
+import whyAnimation from '../../assets/why.gif';
 const Why = () => {
   return (
     <section className='container-fluid why' id='why'>

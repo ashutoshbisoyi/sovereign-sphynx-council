@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.scss';
 import discord from '../../assets/discord.png';
 import twitter from '../../assets/twitter.png';
-import heroAnimation from '../../assets/hero.png';
+import heroAnimation from '../../assets/hero.gif';
 const Hero = () => {
   return (
     <section className='container-fluid hero'>
