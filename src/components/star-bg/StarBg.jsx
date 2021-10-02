@@ -1,7 +1,7 @@
 import React from 'react';
 import useWindowDimensions from '../../helper/useWindowDimension';
 import './StarBg.scss';
-const StarBg = () => {
+const StarBg = ({ bottom }) => {
   const { height, width } = useWindowDimensions();
   const starCount = 100;
   return (
@@ -10,13 +10,23 @@ const StarBg = () => {
         <div
           className='star'
           key={index}
-          style={{
-            animation: `twinkle ${Math.random() * 5 + 5}s linear ${
-              Math.random() * 5 + 5
-            }s infinite`,
-            top: `${Math.random() * height}px`,
-            left: `${Math.random() * width}px`,
-          }}
+          style={
+            bottom
+              ? {
+                  animation: `twinkle ${Math.random() * 5 + 5}s linear ${
+                    Math.random() * 5 + 5
+                  }s infinite`,
+                  bottom: `${Math.random() * height}px`,
+                  left: `${Math.random() * width}px`,
+                }
+              : {
+                  animation: `twinkle ${Math.random() * 5 + 5}s linear ${
+                    Math.random() * 5 + 5
+                  }s infinite`,
+                  top: `${Math.random() * height}px`,
+                  left: `${Math.random() * width}px`,
+                }
+          }
         ></div>
       ))}
     </div>
