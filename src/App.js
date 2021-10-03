@@ -11,6 +11,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Faqs from './components/faqs/Faqs';
 import Team from './components/team/Team';
 import Footer from './components/footer/Footer';
+import Lunch from './components/lunch/Lunch';
 const App = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const App = () => {
       <GradientAnimation />
       <Hero />
       <Why />
+      <Lunch />
       <Mint />
       <Roadmap />
       <Faqs />
