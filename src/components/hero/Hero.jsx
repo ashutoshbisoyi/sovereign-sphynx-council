@@ -11,17 +11,20 @@ const Hero = () => {
           <div className='col-12 col-lg-6'>
             <div className='content'>
               <h1>
-                Welcome to <br className='d-none d-md-block' /> Sovereign Sphynx
-                Council
+                What is the <br className='d-none d-md-block' /> Sovereign
+                Sphynx Council
               </h1>
               <p>
-                Sovereign Sphynx Council is a collection of 8,888 NFTs. Like a
-                snowflake, each collectable is a one-of-a-kind hand-drawn
-                original. We wanna become the coolest project you love! The
-                sphynx were born organically in an NFT community with over a
-                thousand NFT fans and artists. By purchasing a sphynx, you’re
-                also getting access to our exclusive community and some exciting
-                bonus benefits.
+                The Sovereign Sphynx Council are 8,888 Generative Sphynxes with
+                over 150 hand-drawn features battling for supremacy within the
+                Web3 multi-verse. Through unity, ingenuity, and relentless
+                resolve, they have set out to restore their realm to glory and
+                unite the Great Chains.
+              </p>
+              <p>
+                The Sovereign Sphynxes are stored as ERC-721 tokens on the
+                Ethereum and are hosted on IPFS. Yes, they’re tamper-proof and
+                last forever.
               </p>
               <div className='btn-container'>
                 <a href='https://discord.gg/ZEuDaFk4qz' target='_null'>

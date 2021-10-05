@@ -24,14 +24,14 @@ const NavigationBar = () => {
           <ul className='navbar-nav ms-auto'>
             <li className='nav-item ms-md-5'>
               <Link
-                to='why'
+                to='story'
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={500}
                 className='nav-link'
               >
-                Why Mint?
+                The Story
               </Link>
             </li>
             <li className='nav-item ms-md-5'>
