@@ -34,7 +34,7 @@ import skinGold from '../assets/rarity/skinGold.webp';
 import skinGummy_Blue from '../assets/rarity/skinGummy_Blue.webp';
 import skinGummy_Magenta from '../assets/rarity/skinGummy_Magenta.webp';
 import skinBlue_Mesoglea from '../assets/rarity/skinBlue_Mesoglea.webp';
-import skinPixelated_Diamond from '../assets/rarity/skinPixelated_Diamond.webp';
+// import skinPixelated_Diamond from '../assets/rarity/skinPixelated_Diamond.webp';
 import skinPixelated_Glitch from '../assets/rarity/skinPixelated_Glitch.webp';
 import skinOnyx from '../assets/rarity/skinOnyx.webp';
 import skinWhite from '../assets/rarity/skinWhite.webp';

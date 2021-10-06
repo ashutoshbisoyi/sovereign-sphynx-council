@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import RarityData from '../../data/RarityData';
-import StarBg from '../star-bg/StarBg';
 import './Rarity.scss';
 
 const Rarity = () => {
