@@ -16,30 +16,21 @@ const Faqs = () => {
       answer: <p>0.08 ETH + gas.</p>,
     },
     {
-      question: 'Will there be a pre-sale?',
-      answer: (
-        <p>
-          Yes, We will make sure that active community members will be rewarded.
-        </p>
-      ),
-    },
-    {
       question: 'Will there be a Presale?',
       answer: (
-        <p>
-          No. We will have a Public Sale that will take place in 3 phases.{' '}
-          <br />
-          <br />
-          1. Whitelist Registration <br /> 2. General Registration <br /> 3.
-          Public Sale <br />
-          <br />
-          Each Registration phase will allow buyers to opportunity Register
-          their Wallet and Reserve the number of Sphynxes they'd like to mint
-          <br />
-          <br />
-          We are taking this approach to prevent gas wars and give the Community
-          a chance to compete for a SPOT in the Sale.
-        </p>
+        <div>
+          <p>Our Sale will take place in 3 phases.</p>
+          <ol>
+            <li>Whitelist Registration - open until 10/9 at 8:00am UTC</li>
+            <li>Whitelisted Sale – 10/9 at 3:00pm UTC</li>
+            <li>Public Sale – 10/9 at 3:15pm UTC</li>
+          </ol>
+          <p>
+            We are taking this approach to reward the most active, engaged, and
+            supportive members of our Community, and to avoid potential Gas
+            wars.
+          </p>
+        </div>
       ),
     },
   ];
