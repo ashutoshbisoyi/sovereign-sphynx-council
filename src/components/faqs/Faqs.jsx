@@ -9,7 +9,7 @@ const Faqs = () => {
     },
     {
       question: 'When is the launch?',
-      answer: <p>We will launch on October 3, 4 PM UTC.</p>,
+      answer: <p>We will launch on October 9, 4 PM UTC.</p>,
     },
     {
       question: 'How much does it cost to mint an NFT?',

@@ -12,6 +12,7 @@ import Team from './components/team/Team';
 import Footer from './components/footer/Footer';
 import Lunch from './components/lunch/Lunch';
 import Story from './components/story/Story';
+import Rarity from './components/rarity/Rarity';
 const App = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const App = () => {
       <Lunch />
       <Mint />
       <Roadmap />
+      <Rarity />
       <Faqs />
       <Team />
       <Footer />
