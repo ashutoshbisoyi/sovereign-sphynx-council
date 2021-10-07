@@ -9,7 +9,7 @@ const Faqs = () => {
     },
     {
       question: 'When is the launch?',
-      answer: <p>We will launch on October 9, 4 PM UTC.</p>,
+      answer: <p>We will launch on October 11, 3pm UTC</p>,
     },
     {
       question: 'How much does it cost to mint an NFT?',
@@ -19,11 +19,11 @@ const Faqs = () => {
       question: 'Will there be a Presale?',
       answer: (
         <div>
-          <p>Our Sale will take place in 3 phases.</p>
+          <p>Our Sale will take place in 3 Phases</p>
           <ol>
-            <li>Whitelist Registration - open until 10/9 at 8:00am UTC</li>
-            <li>Whitelisted Sale – 10/9 at 3:00pm UTC</li>
-            <li>Public Sale – 10/9 at 3:15pm UTC</li>
+            <li>Whitelist Registration - Open until 10/11 at 8:00am UTC</li>
+            <li>Whitelisted Sale - 10/11 at 3:00pm UTC</li>
+            <li>Public Sale - 10/11 at 3:15pm UTC</li>
           </ol>
           <p>
             We are taking this approach to reward the most active, engaged, and

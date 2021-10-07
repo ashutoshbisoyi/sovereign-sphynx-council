@@ -8,7 +8,7 @@ const Rarity = () => {
 
   const topFilterCategories = RarityData.map((value) => value.category);
   const topUniqueFilterCategories = [...new Set(topFilterCategories)];
-  const bottomFilterCategories = ['common', 'uncommon', 'rare', 'superRare'];
+  const bottomFilterCategories = ['common', 'uncommon', 'rare', 'legendary'];
   return (
     <section className='container-fluid rarity'>
       <div className='container'>
@@ -26,7 +26,39 @@ const Rarity = () => {
           ))}
         </ul>
         <ul className='filtered-items'>
-          {RarityData.map((value, index) => {
+          {RarityData.filter(
+            (value) =>
+              value.category === topFilterType &&
+              value.type === bottomFilterType
+          ).length > 0 ? (
+            RarityData.filter(
+              (value) =>
+                value.category === topFilterType &&
+                value.type === bottomFilterType
+            ).map((value, index) => {
+              return (
+                value.category === topFilterType &&
+                value.type === bottomFilterType && (
+                  <div className='rarity-card-container' key={index}>
+                    <div className='rarity-card'>
+                      <img
+                        src={value.file}
+                        alt={value.name}
+                        className='img-fluid'
+                      />
+                      <h5>Rarity {value.rarity}%</h5>
+                      <h4>{value.type}</h4>
+                    </div>
+                  </div>
+                )
+              );
+            })
+          ) : (
+            <div className='rarity-no-data'>
+              <h5>No Data</h5>
+            </div>
+          )}
+          {/* {RarityData.map((value, index) => {
             return (
               value.category === topFilterType &&
               value.type === bottomFilterType && (
@@ -43,7 +75,7 @@ const Rarity = () => {
                 </div>
               )
             );
-          })}
+          })} */}
         </ul>
         <ul className='bottom-filter'>
           {bottomFilterCategories.map((value, index) => (
