@@ -1356,7 +1356,7 @@ const RarityData = [
   //legendary armor
   {
     name: 'Black / Gold',
-    category: 'Legendary Armor (Legendary)',
+    category: 'Legendary Armor',
     quantity: '3',
     rarity: 0.03,
     file: black_Gold,
@@ -1364,7 +1364,7 @@ const RarityData = [
   },
   {
     name: 'Black / Purple',
-    category: 'Legendary Armor (Legendary)',
+    category: 'Legendary Armor',
     quantity: '6',
     rarity: 0.06,
     file: black_Purple,
@@ -1372,7 +1372,7 @@ const RarityData = [
   },
   {
     name: 'Blue / Gold',
-    category: 'Legendary Armor (Legendary)',
+    category: 'Legendary Armor',
     quantity: '5',
     rarity: 0.05,
     file: blue_Gold,
@@ -1380,7 +1380,7 @@ const RarityData = [
   },
   {
     name: ' Purple/Green',
-    category: 'Legendary Armor (Legendary)',
+    category: 'Legendary Armor',
     quantity: '3',
     rarity: 0.03,
     file: purple_Green,
@@ -1388,7 +1388,7 @@ const RarityData = [
   },
   {
     name: 'White / Black',
-    category: 'Legendary Armor (Legendary)',
+    category: 'Legendary Armor',
     quantity: '5',
     rarity: 0.05,
     file: white_Black,
@@ -1396,7 +1396,7 @@ const RarityData = [
   },
   {
     name: 'White / Blue ',
-    category: 'Legendary Armor (Legendary)',
+    category: 'Legendary Armor',
     quantity: '4',
     rarity: 0.04,
     file: white_Blue,
@@ -1404,7 +1404,7 @@ const RarityData = [
   },
   {
     name: 'White / Red',
-    category: 'Legendary Armor (Legendary)',
+    category: 'Legendary Armor',
     quantity: '4',
     rarity: 0.04,
     file: white_Red,
@@ -1413,7 +1413,7 @@ const RarityData = [
   //lagendary mask
   {
     name: 'Blue',
-    category: 'Legendary Mask (Legendary 2)',
+    category: 'Legendary Mask',
     quantity: '4',
     rarity: 0.04,
     file: maskBlue,
@@ -1421,7 +1421,7 @@ const RarityData = [
   },
   {
     name: 'Red',
-    category: 'Legendary Mask (Legendary 2)',
+    category: 'Legendary Mask',
     quantity: '3',
     rarity: 0.03,
     file: maskRed,
@@ -1429,7 +1429,7 @@ const RarityData = [
   },
   {
     name: 'Purple',
-    category: 'Legendary Mask (Legendary 2)',
+    category: 'Legendary Mask',
     quantity: '4',
     rarity: 0.04,
     file: maskPurple,
@@ -1437,7 +1437,7 @@ const RarityData = [
   },
   {
     name: 'Gold',
-    category: 'Legendary Mask (Legendary 2)',
+    category: 'Legendary Mask',
     quantity: '4',
     rarity: 0.04,
     file: maskGold,
@@ -1445,7 +1445,7 @@ const RarityData = [
   },
   {
     name: 'Anubis',
-    category: 'Legendary Mask (Legendary 2)',
+    category: 'Legendary Mask',
     quantity: '3',
     rarity: 0.03,
     file: maskAnubis,
@@ -1453,7 +1453,7 @@ const RarityData = [
   },
   {
     name: 'Horus',
-    category: 'Legendary Mask (Legendary 2)',
+    category: 'Legendary Mask',
     quantity: '3',
     rarity: 0.03,
     file: maskHorus,
@@ -1461,7 +1461,7 @@ const RarityData = [
   },
   {
     name: 'Demon',
-    category: 'Legendary Mask (Legendary 2)',
+    category: 'Legendary Mask',
     quantity: '3',
     rarity: 0.03,
     file: maskDemon,
@@ -1469,7 +1469,7 @@ const RarityData = [
   },
   {
     name: 'Amaterasu, White',
-    category: 'Legendary Mask (Legendary 2)',
+    category: 'Legendary Mask',
     quantity: '4',
     rarity: 0.04,
     file: maskAmaterasu_White,
@@ -1477,7 +1477,7 @@ const RarityData = [
   },
   {
     name: 'Amaterasu, Black',
-    category: 'Legendary Mask (Legendary 2)',
+    category: 'Legendary Mask',
     quantity: '2',
     rarity: 0.02,
     file: maskAmaterasu_Black,
