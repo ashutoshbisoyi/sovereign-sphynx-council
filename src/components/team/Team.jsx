@@ -26,7 +26,7 @@ const Team = () => {
     },
     {
       image: member5,
-      name: 'Visionary(Denko)',
+      name: 'Denko',
     },
   ];
   return (

@@ -8,7 +8,7 @@ const Rarity = () => {
 
   const topFilterCategories = RarityData.map((value) => value.category);
   const topUniqueFilterCategories = [...new Set(topFilterCategories)];
-  const bottomFilterCategories = ['common', 'uncommon', 'rare', 'superRare'];
+  const bottomFilterCategories = ['common', 'uncommon', 'rare', 'legendary'];
   return (
     <section className='container-fluid rarity'>
       <div className='container'>

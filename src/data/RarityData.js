@@ -99,6 +99,59 @@ import Samurai from '../assets/rarity/Samurai.webp';
 import Million_Eyes from '../assets/rarity/Million_Eyes.webp';
 import Saiyan from '../assets/rarity/Saiyan.webp';
 import Naked from '../assets/rarity/Naked.webp';
+//
+import ankh from '../assets/rarity/ankh.png';
+import All_Seeing_Eye from '../assets/rarity/All_Seeing_Eye.png';
+import pyramid from '../assets/rarity/pyramid.png';
+import millennium from '../assets/rarity/millennium.png';
+import n95_Mask_White from '../assets/rarity/n95_Mask_White.png';
+import n95_Mask__Black from '../assets/rarity/n95_Mask__Black.png';
+import gas_Mask from '../assets/rarity/gas_Mask.png';
+import sans_Skull_Mask from '../assets/rarity/sans_Skull_Mask.png';
+import meat from '../assets/rarity/meat.png';
+import neme from '../assets/rarity/neme.png';
+import turban from '../assets/rarity/turban.png';
+import baseball_Cap_White from '../assets/rarity/baseball_Cap_White.png';
+import baseball_Cap_Red from '../assets/rarity/baseball_Cap_Red.png';
+import baseball_Cap_Blue from '../assets/rarity/baseball_Cap_Blue.png';
+import baseball_Cap_Mickey_Ds from '../assets/rarity/baseball_Cap_Mickey_Ds.png';
+import mohawk_Red from '../assets/rarity/mohawk_Red.png';
+import mohawk_Yellow from '../assets/rarity/mohawk_Yellow.png';
+import mohawk_Turquoise from '../assets/rarity/mohawk_Turquoise.png';
+import top_Hat from '../assets/rarity/top_Hat.png';
+import electrode_EEG from '../assets/rarity/electrode_EEG.png';
+import plush_Frog from '../assets/rarity/plush_Frog.png';
+import horn from '../assets/rarity/horn.png';
+import head_Guard from '../assets/rarity/head_Guard.png';
+import star_Hat from '../assets/rarity/star_Hat.png';
+import super_Saiyan from '../assets/rarity/super_Saiyan.png';
+import sunglasses from '../assets/rarity/sunglasses.png';
+import three3D_Glasses from '../assets/rarity/three3D_Glasses.png';
+import aviator_Goggles from '../assets/rarity/aviator_Goggles.png';
+import okita_Sougou_Eyemask from '../assets/rarity/okita_Sougou_Eyemask.png';
+import pitViper_Orange from '../assets/rarity/pitViper_Orange.png';
+import pitViper_Magenta from '../assets/rarity/pitViper_Magenta.png';
+import pitViper_Cyan from '../assets/rarity/pitViper_Cyan.png';
+import golden_Glasses from '../assets/rarity/golden_Glasses.png';
+import cyborg from '../assets/rarity/cyborg.png';
+import million_Eyes from '../assets/rarity/million_Eyes.png';
+import All_Seeing_Eye_2 from '../assets/rarity/All_Seeing_Eye_2.png';
+import kaminas_Glasses from '../assets/rarity/kaminas_Glasses.png';
+import virtual_Boy from '../assets/rarity/virtual_Boy.png';
+import chainsaw from '../assets/rarity/chainsaw.png';
+import cRT from '../assets/rarity/cRT.png';
+import hololens_Based_AR_Military_helmet from '../assets/rarity/hololens_Based_AR_Military_helmet.png';
+//
+import cigarette from '../assets/rarity/cigarette.png';
+import bubble_Gum from '../assets/rarity/bubble_Gum.png';
+import coca_Cola_MX from '../assets/rarity/coca_Cola_MX.png';
+import vape from '../assets/rarity/vape.png';
+import monster_Ultra_Fiesta from '../assets/rarity/monster_Ultra_Fiesta.png';
+import monster_Ultra_Rosa from '../assets/rarity/monster_Ultra_Rosa.png';
+import hamburger from '../assets/rarity/hamburger.png';
+import strawberry_Ramune from '../assets/rarity/strawberry_Ramune.png';
+import shin_Ramyun from '../assets/rarity/shin_Ramyun.png';
+import golden_Vape from '../assets/rarity/golden_Vape.png';
 
 const RarityData = [
   {
@@ -274,7 +327,7 @@ const RarityData = [
     category: 'Backgrounds',
     quantity: '3',
     rarity: 0.03,
-    type: 'superRare',
+    type: 'legendary',
     file: retro,
   },
   {
@@ -370,7 +423,7 @@ const RarityData = [
     category: 'Skins',
     quantity: '6',
     rarity: 0.06,
-    type: 'superRare',
+    type: 'legendary',
     file: skinWhite,
   },
 
@@ -379,7 +432,7 @@ const RarityData = [
     category: 'Skins',
     quantity: '5',
     rarity: 0.05,
-    type: 'superRare',
+    type: 'legendary',
     file: skinOnyx,
   },
   {
@@ -387,7 +440,7 @@ const RarityData = [
     category: 'Skins',
     quantity: '4',
     rarity: 0.04,
-    type: 'superRare',
+    type: 'legendary',
     file: skinPixelated_Glitch,
   },
   {
@@ -579,7 +632,7 @@ const RarityData = [
     category: 'Eyes',
     quantity: '2',
     rarity: 0.02,
-    type: 'superRare',
+    type: 'legendary',
     file: eyesRelaxed,
   },
   {
@@ -587,7 +640,7 @@ const RarityData = [
     category: 'Eyes',
     quantity: '2',
     rarity: 0.02,
-    type: 'superRare',
+    type: 'legendary',
     file: eyesAnxiety,
   },
   {
@@ -787,7 +840,7 @@ const RarityData = [
     category: 'Clothing',
     quantity: '8',
     rarity: 0.09,
-    type: 'superRare',
+    type: 'legendary',
     file: EVA_Suit_White,
   },
   {
@@ -795,7 +848,7 @@ const RarityData = [
     category: 'Clothing',
     quantity: '8',
     rarity: 0.09,
-    type: 'superRare',
+    type: 'legendary',
     file: EVA_Suit_Black,
   },
   {
@@ -811,8 +864,8 @@ const RarityData = [
     category: 'Clothing',
     quantity: '6',
     rarity: 0.06,
-    type: 'superRare',
-    file: Million_Eyes,
+    type: 'legendary',
+    file: million_Eyes,
   },
   {
     name: 'Saiyan Uniform',
@@ -829,6 +882,414 @@ const RarityData = [
     rarity: 0.99,
     type: 'uncommon',
     file: Naked,
+  },
+  {
+    name: 'Ankh',
+    category: 'Neckles',
+    quantity: '5',
+    rarity: 0.05,
+    type: 'rare',
+    file: ankh,
+  },
+  {
+    name: 'All Seeing Eyes',
+    category: 'Neckles',
+    quantity: '5',
+    rarity: 0.05,
+    type: 'rare',
+    file: All_Seeing_Eye,
+  },
+  {
+    name: 'Pyramid',
+    category: 'Neckles',
+    quantity: '5',
+    rarity: 0.05,
+    file: pyramid,
+    type: 'rare',
+  },
+  {
+    name: 'Millenium',
+    category: 'Neckles',
+    quantity: '5',
+    rarity: 0.05,
+    file: millennium,
+    type: 'legendary',
+  },
+  {
+    name: 'N95 Mask , White',
+    category: 'Mouth',
+    quantity: '222',
+    rarity: 2.51,
+    file: n95_Mask_White,
+    type: 'common',
+  },
+  {
+    name: 'N95 Mask , Black',
+    category: 'Mouth',
+    quantity: '222',
+    rarity: 2.51,
+    file: n95_Mask__Black,
+    type: 'common',
+  },
+  {
+    name: 'Gas Mask',
+    category: 'Mouth',
+    quantity: '99',
+    rarity: 1.12,
+    file: gas_Mask,
+    type: 'uncommon',
+  },
+  {
+    name: 'Sans Skull',
+    category: 'Mouth',
+    quantity: '88',
+    rarity: 0.99,
+    file: sans_Skull_Mask,
+    type: 'uncommon',
+  },
+  {
+    name: 'Meat',
+    category: 'Mouth',
+    quantity: '77',
+    rarity: 0.87,
+    file: meat,
+    type: 'uncommon',
+  },
+  {
+    name: 'Neme',
+    category: 'Head',
+    quantity: '215',
+    rarity: 2.43,
+    file: neme,
+    type: 'common',
+  },
+  {
+    name: 'Turban',
+    category: 'Head',
+    quantity: '215',
+    rarity: 2.43,
+    file: turban,
+    type: 'common',
+  },
+  {
+    name: 'Baseball Cap ,White',
+    category: 'Head',
+    quantity: '300',
+    rarity: 3.39,
+    file: baseball_Cap_White,
+    type: 'common',
+  },
+  {
+    name: 'Baseball Cap ,Red',
+    category: 'Head',
+    quantity: '152',
+    rarity: 1.72,
+    file: baseball_Cap_Red,
+    type: 'common',
+  },
+  {
+    name: 'Baseball Cap ,Blue',
+    category: 'Head',
+    quantity: '161',
+    rarity: 1.82,
+    file: baseball_Cap_Blue,
+    type: 'common',
+  },
+  {
+    name: "Baseball Cap ,Mickie D's",
+    category: 'Head',
+    quantity: '98',
+    rarity: 1.11,
+    file: baseball_Cap_Mickey_Ds,
+    type: 'uncommon',
+  },
+  {
+    name: 'Mohawk ,Red',
+    category: 'Head',
+    quantity: '75',
+    rarity: 0.84,
+    file: mohawk_Red,
+    type: 'uncommon',
+  },
+  {
+    name: 'Mohawk ,Yellow',
+    category: 'Head',
+    quantity: '99',
+    rarity: 1.12,
+    file: mohawk_Yellow,
+    type: 'uncommon',
+  },
+  {
+    name: 'Mohawk ,Turqoise',
+    category: 'Head',
+    quantity: '102',
+    rarity: 1.15,
+    file: mohawk_Turquoise,
+  },
+  {
+    name: 'Top Hat',
+    category: 'Head',
+    quantity: '55',
+    rarity: 0.62,
+    file: top_Hat,
+    type: 'uncommon',
+  },
+  {
+    name: 'Electrod EEG',
+    category: 'Head',
+    quantity: '10',
+    rarity: 0.11,
+    file: electrode_EEG,
+    type: 'rare',
+  },
+  {
+    name: 'Plush Frog ',
+    category: 'Head',
+    quantity: '21',
+    rarity: 0.23,
+    file: plush_Frog,
+    type: 'uncommon',
+  },
+  {
+    name: 'Horn',
+    category: 'Head',
+    quantity: '33',
+    rarity: 0.37,
+    file: horn,
+    type: 'uncommon',
+  },
+  {
+    name: 'Head Guard',
+    category: 'Head',
+    quantity: '15',
+    rarity: 0.16,
+    file: head_Guard,
+    type: 'rare',
+  },
+  {
+    name: 'Star Hat',
+    category: 'Head',
+    quantity: '5',
+    rarity: 0.05,
+    file: star_Hat,
+    type: 'legendary',
+  },
+  {
+    name: 'Super Saiyan',
+    category: 'Head',
+    quantity: '33',
+    rarity: 0.37,
+    file: super_Saiyan,
+    type: 'uncommon',
+  },
+  {
+    name: 'Sunglasses',
+    category: 'Eyewear',
+    quantity: '400',
+    rarity: 4.53,
+    file: sunglasses,
+    type: 'common',
+  },
+  {
+    name: '3D Glasses',
+    category: 'Eyewear',
+    quantity: '300',
+    rarity: 3.39,
+    file: three3D_Glasses,
+    type: 'common',
+  },
+  {
+    name: 'Aviator Goggles',
+    category: 'Eyewear',
+    quantity: '200',
+    rarity: 2.26,
+    file: aviator_Goggles,
+    type: 'common',
+  },
+  {
+    name: 'Okita Sougou Eyemask',
+    category: 'Eyewear',
+    quantity: '60',
+    rarity: 0.67,
+    file: okita_Sougou_Eyemask,
+    type: 'uncommon',
+  },
+  {
+    name: 'Pitviper ,Orange',
+    category: 'Eyewear',
+    quantity: '53',
+    rarity: 0.6,
+    file: pitViper_Orange,
+    type: 'uncommon',
+  },
+  {
+    name: 'Pitviper , Magenta',
+    category: 'Eyewear',
+    quantity: '51',
+    rarity: 0.57,
+    file: pitViper_Magenta,
+    type: 'uncommon',
+  },
+  {
+    name: 'Pitviper ,Cyan',
+    category: 'Eyewear',
+    quantity: '50',
+    rarity: 0.56,
+    file: pitViper_Cyan,
+    type: 'uncommon',
+  },
+  {
+    name: 'Golden Glasses',
+    category: 'Eyewear',
+    quantity: '14',
+    rarity: 0.15,
+    file: golden_Glasses,
+    type: 'rare',
+  },
+  {
+    name: 'Cyborg',
+    category: 'Eyewear',
+    quantity: '31',
+    rarity: 0.35,
+    file: cyborg,
+    type: 'rare',
+  },
+  {
+    name: 'Million Eyes',
+    category: 'Eyewear',
+    quantity: '44',
+    rarity: 0.49,
+    file: Million_Eyes,
+    type: 'uncommon',
+  },
+  {
+    name: 'All Seeing Eyes',
+    category: 'Eyewear',
+    quantity: '22',
+    rarity: 0.24,
+    file: All_Seeing_Eye_2,
+    type: 'rare',
+  },
+  {
+    name: "Kamina's Glasses",
+    category: 'Eyewear',
+    quantity: '4',
+    rarity: 0.04,
+    file: kaminas_Glasses,
+    type: 'legendary',
+  },
+  {
+    name: 'Virtual Boy',
+    category: 'Eyewear',
+    quantity: '3',
+    rarity: 0.03,
+    file: virtual_Boy,
+    type: 'legendary',
+  },
+  {
+    name: 'Chainsaw',
+    category: 'Special Head',
+    quantity: '1',
+    rarity: 0.01,
+    file: chainsaw,
+    type: 'legendary',
+  },
+  {
+    name: 'CRT',
+    category: 'Special Head',
+    quantity: '3',
+    rarity: 0.03,
+    file: cRT,
+    type: 'legendary',
+  },
+  {
+    name: 'Hololens AR Military Helmet',
+    category: 'Special Head',
+    quantity: '5',
+    rarity: 0.05,
+    file: hololens_Based_AR_Military_helmet,
+    type: 'legendary',
+  },
+  //todo image
+  {
+    name: 'Cigarette',
+    category: 'Foods',
+    quantity: '69',
+    rarity: 0.78,
+    file: cigarette,
+    type: 'rare',
+  },
+  {
+    name: 'Bubble Gum',
+    category: 'Foods',
+    quantity: '212',
+    rarity: 2.4,
+    file: bubble_Gum,
+    type: 'uncommon',
+  },
+  {
+    name: 'Coca Cola MX',
+    category: 'Foods',
+    quantity: '69',
+    rarity: 0.78,
+    file: coca_Cola_MX,
+    type: 'rare',
+  },
+  {
+    name: 'Vape',
+    category: 'Foods',
+    quantity: '115',
+    rarity: 1.3,
+    file: vape,
+    type: 'uncommon',
+  },
+  {
+    name: 'Monster , Ultra Fiesta',
+    category: 'Foods',
+    quantity: '47',
+    rarity: 0.53,
+    file: monster_Ultra_Fiesta,
+    type: 'rare',
+  },
+  {
+    name: 'Monster , Ultra Rose',
+    category: 'Foods',
+    quantity: '51',
+    rarity: 0.57,
+    file: monster_Ultra_Rosa,
+    type: 'rare',
+  },
+  {
+    name: 'Hamburger',
+    category: 'Foods',
+    quantity: '33',
+    rarity: 0.37,
+    file: hamburger,
+    type: 'rare',
+  },
+  {
+    name: 'strawberry Ramune',
+    category: 'Foods',
+    quantity: '11',
+    rarity: 0.12,
+    file: strawberry_Ramune,
+    type: 'rare',
+  },
+  {
+    name: 'Shin Ramyun',
+    category: 'Foods',
+    quantity: '15',
+    rarity: 0.16,
+    file: shin_Ramyun,
+    type: 'rare',
+  },
+  {
+    name: 'Golden Vape',
+    category: 'Foods',
+    quantity: '3',
+    rarity: 0.03,
+    file: golden_Vape,
+    type: 'legendary',
   },
 ];
 export default RarityData;
