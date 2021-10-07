@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import RarityData from '../../data/RarityData';
 import './Rarity.scss';
-
+import uncommonIcon from '../../assets/uncommon.png';
+import rareIcon from '../../assets/rare.png';
+import legendaryIcon from '../../assets/legendary.png';
 const Rarity = () => {
   const [topFilterType, setTopFilterType] = useState('Backgrounds');
   const [bottomFilterType, setBottomFilterType] = useState('common');
@@ -58,24 +60,6 @@ const Rarity = () => {
               <h5>No Data</h5>
             </div>
           )}
-          {/* {RarityData.map((value, index) => {
-            return (
-              value.category === topFilterType &&
-              value.type === bottomFilterType && (
-                <div className='rarity-card-container' key={index}>
-                  <div className='rarity-card'>
-                    <img
-                      src={value.file}
-                      alt={value.name}
-                      className='img-fluid'
-                    />
-                    <h5>Rarity {value.rarity}%</h5>
-                    <h4>{value.type}</h4>
-                  </div>
-                </div>
-              )
-            );
-          })} */}
         </ul>
         <ul className='bottom-filter'>
           {bottomFilterCategories.map((value, index) => (
@@ -84,7 +68,22 @@ const Rarity = () => {
                 className={bottomFilterType === value ? 'active' : ''}
                 onClick={() => setBottomFilterType(value)}
               >
-                {value}
+                {value !== 'common' && (
+                  <img
+                    src={
+                      value === 'uncommon'
+                        ? uncommonIcon
+                        : value === 'rare'
+                        ? rareIcon
+                        : value === 'legendary'
+                        ? legendaryIcon
+                        : ''
+                    }
+                    alt={value}
+                    className='img-fluid'
+                  />
+                )}
+                <span>{value}</span>
               </button>
             </li>
           ))}

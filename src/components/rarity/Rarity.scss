@@ -33,6 +33,12 @@
     li {
       margin: 0 1em;
     }
+    button {
+      @include align-center;
+      img {
+        margin-right: 0.5em;
+      }
+    }
   }
   .filtered-items {
     @include styled-scrollbar;
@@ -91,6 +97,7 @@
       }
       button {
         min-width: 130px;
+        font-size: 0.9em;
       }
     }
   }
