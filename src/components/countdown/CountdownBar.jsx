@@ -13,7 +13,7 @@ const CountdownBar = () => {
           hourTitle='Hours'
           minuteTitle='Minutes'
           secondTitle='Seconds'
-          endAt={new Date(2021, 9, 11, 8, 30, 0, 0)}
+          endAt={new Date(2021, 9, 11, 20, 30, 0, 0)}
           endAtZero
           titlePosition='bottom'
           size='medium'
