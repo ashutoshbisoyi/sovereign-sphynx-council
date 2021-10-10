@@ -5,6 +5,11 @@ import { Link } from 'react-scroll';
 import metamask from '../../assets/metamask.png';
 import trustwallet from '../../assets/trustwallet.png';
 import cancel from '../../assets/cancel.png';
+
+import { useWeb3React } from '@web3-react/core'
+import useAuth from '../../hooks/useAuth';
+
+
 const NavigationBar = () => {
   const [openPopup, setOpenPopup] = useState(false);
   const handleOpenPopUp = () => {
@@ -13,6 +18,32 @@ const NavigationBar = () => {
   const handleClosePopUp = () => {
     setOpenPopup(false);
   };
+
+  const { account } = useWeb3React();
+  const { login, logout } = useAuth();
+
+  const connectMetamask = () => {
+    localStorage.setItem("connectorId", "injected")
+    if (account) {
+      logout()
+    } else {
+      login("injected")
+    }
+  }
+
+  const trustWallet = async () => {
+    localStorage.setItem("connectorId", "walletconnect")
+    if (account) {
+      logout()
+    } else {
+      login("walletconnect")
+    }
+  }
+
+  const Disconnect = async () => {
+    logout()
+    localStorage.setItem("connectorId", "")
+  }
 
   return (
     <>
@@ -27,7 +58,7 @@ const NavigationBar = () => {
                 onClick={handleClosePopUp}
               />
               <h4>Connect Wallet</h4>
-              <button>
+              <button onClick={connectMetamask}>
                 {' '}
                 <img
                   src={metamask}
@@ -36,7 +67,7 @@ const NavigationBar = () => {
                 />{' '}
                 METAMASK
               </button>
-              <button>
+              <button onClick={trustWallet}>
                 <img
                   src={trustwallet}
                   alt='meta mask'
@@ -118,9 +149,14 @@ const NavigationBar = () => {
                 </Link>
               </li>
               <li className='nav-item ms-md-5'>
-                <button onClick={handleOpenPopUp}>
-                  <div className='dot'></div>Connect Wallet
-                </button>
+                {!account ?
+                  <button onClick={handleOpenPopUp}>
+                    <div className='dot'></div>Connect Wallet
+                  </button>
+                  : <button onClick={Disconnect}>
+                    <div className='dot'></div>Disconnect
+                  </button>
+                }
               </li>
             </ul>
           </div>
