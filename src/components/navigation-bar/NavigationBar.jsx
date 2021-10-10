@@ -3,12 +3,11 @@ import './NavigationBar.scss';
 import logo from '../../assets/logo.png';
 import { Link } from 'react-scroll';
 import metamask from '../../assets/metamask.png';
-import trustwallet from '../../assets/trustwallet.png';
+import walletconnect from '../../assets/walletconnect.png';
 import cancel from '../../assets/cancel.png';
 
-import { useWeb3React } from '@web3-react/core'
+import { useWeb3React } from '@web3-react/core';
 import useAuth from '../../hooks/useAuth';
-
 
 const NavigationBar = () => {
   const [openPopup, setOpenPopup] = useState(false);
@@ -23,27 +22,27 @@ const NavigationBar = () => {
   const { login, logout } = useAuth();
 
   const connectMetamask = () => {
-    localStorage.setItem("connectorId", "injected")
+    localStorage.setItem('connectorId', 'injected');
     if (account) {
-      logout()
+      logout();
     } else {
-      login("injected")
+      login('injected');
     }
-  }
+  };
 
   const trustWallet = async () => {
-    localStorage.setItem("connectorId", "walletconnect")
+    localStorage.setItem('connectorId', 'walletconnect');
     if (account) {
-      logout()
+      logout();
     } else {
-      login("walletconnect")
+      login('walletconnect');
     }
-  }
+  };
 
   const Disconnect = async () => {
-    logout()
-    localStorage.setItem("connectorId", "")
-  }
+    logout();
+    localStorage.setItem('connectorId', '');
+  };
 
   return (
     <>
@@ -69,15 +68,15 @@ const NavigationBar = () => {
               </button>
               <button onClick={trustWallet}>
                 <img
-                  src={trustwallet}
+                  src={walletconnect}
                   alt='meta mask'
                   className='img-fluid me-3'
                 />
-                TRUSTWALLET
+                WalletConnect
               </button>
-              <div className='d-flex justify-content-center mt-5'>
+              {/* <div className='d-flex justify-content-center mt-5'>
                 <a href='https://www.google.co.in/'>Learn how to connect?</a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -149,14 +148,15 @@ const NavigationBar = () => {
                 </Link>
               </li>
               <li className='nav-item ms-md-5'>
-                {!account ?
+                {!account ? (
                   <button onClick={handleOpenPopUp}>
                     <div className='dot'></div>Connect Wallet
                   </button>
-                  : <button onClick={Disconnect}>
+                ) : (
+                  <button onClick={Disconnect}>
                     <div className='dot'></div>Disconnect
                   </button>
-                }
+                )}
               </li>
             </ul>
           </div>
