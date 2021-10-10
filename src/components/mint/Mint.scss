@@ -2,6 +2,10 @@
 @import '../../styles/mixins';
 @import '../../styles/variables';
 @import '../../styles/mixins';
+
+.success-toast {
+  background-color: green;
+}
 .modal-container {
   min-height: 100px;
   position: fixed;
