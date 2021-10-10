@@ -23,7 +23,7 @@ const Faqs = () => {
           <ol>
             <li>Whitelist Registration - Open until 10/11 at 8:00am UTC</li>
             <li>Whitelisted Sale - 10/11 at 3:00pm UTC</li>
-            <li>Public Sale - 10/11 at 3:15pm UTC</li>
+            <li>Public Sale - 10/11 at 4:00pm UTC</li>
           </ol>
           <p>
             We are taking this approach to reward the most active, engaged, and
