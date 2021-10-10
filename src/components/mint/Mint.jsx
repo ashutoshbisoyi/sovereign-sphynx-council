@@ -60,9 +60,11 @@ const Mint = () => {
             <div className='gradient-container cta'>
               <button className='primary'>Mint</button>
             </div>
-            <button className='verify' onClick={verifyWhiteList}>
-              {verified ? 'You are verified' : 'Verify Whitelist'}
-            </button>
+            <div className='gradient-container max'>
+              <button onClick={verifyWhiteList}>
+                {verified ? 'You are Verified' : 'Verify Whitelist'}
+              </button>
+            </div>
           </div>
           <div className='progress'>
             <h5>0/8888</h5>
