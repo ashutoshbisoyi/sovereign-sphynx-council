@@ -11,7 +11,8 @@ const Mint = () => {
   const verifyWhiteList = () => {
     if (!verified) {
       setVerified(true);
-      toast('You are verified');
+      toast('You are Whitelisted');
+      // toast.error('you are not whitelisted'); //this is for error message (if not white listed)
       setCount(20);
     }
   };
@@ -41,7 +42,7 @@ const Mint = () => {
             <button className='primary'>Mint</button>
           </div>
           <button className='verify' onClick={verifyWhiteList}>
-            {verified ? 'You are verified' : 'Verify'}
+            {verified ? 'You are verified' : 'Verify Whitelist'}
           </button>
         </div>
         <div className='progress'>
