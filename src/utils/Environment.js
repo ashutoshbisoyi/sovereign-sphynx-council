@@ -1,6 +1,5 @@
 let Environment = {
-    YfethContractAddress: "0x1C89f9E644aAa08Dfb762bCe95061ECFC74C37dF",
-  
+    sscAddress: "0xE07F8B0C190333C5F9df1c7450d8b1D36da6A251",
   };
   
   export default Environment;

@@ -1,40 +1,107 @@
 import { useEffect, useState } from 'react'
-import BigNumber from 'bignumber.js'
-import { useWeb3React } from '@web3-react/core'
 import { getBep20Contract } from '../utils/contractHelpers'
 import useWeb3 from './useWeb3'
 import useRefresh from './useRefresh'
 import environment from '../utils/Environment';
-import axios from 'axios';
+
+const useWhitelisted = (account) => {
+    const [whitelisted, setWhitelisted] = useState(false)
+    const web3 = useWeb3()
+    const { fastRefresh } = useRefresh()
+    const tokenAddress = environment.sscAddress;
+    const contract = getBep20Contract(tokenAddress, web3)
+    useEffect(async () => {
+        try {
+            if (account) {
+                const res = await contract.methods.whitelisted(account).call()
+                setWhitelisted(res)
+            }
+        } catch (error) {
+            return false;
+        }
+
+    }, [contract, fastRefresh, account])
+
+    return whitelisted
+}
+
 
 const useTotalSupply = () => {
-    console.log("useRefresh")
-    const [supply, setSupply] = useState([])
+    const [supply, setSupply] = useState(0)
 
     const web3 = useWeb3()
     const { fastRefresh } = useRefresh()
-    const tokenAddress = environment.YfethContractAddress;
+    const tokenAddress = environment.sscAddress;
+    const contract = getBep20Contract(tokenAddress, web3)
     useEffect(async () => {
-        const contract = getBep20Contract(tokenAddress, web3)
         const res = await contract.methods.totalSupply().call()
-        let total = parseInt(res)
-        let arr = [];
-        for (let i = total; i > total - 12; i--) {
-            if (i <= 0) {
-                continue;
-            }
-            let { data } = await axios.get(`https://gateway.ipfs.io/ipfs/QmY6qr9qHS3ZY1WV9PcsDFBteRfmgx8nBQMhWK94GYTUyK/${i-1}`);
-            arr.push(data)
-        }
-        setSupply(arr)
+        setSupply(res)
 
-    }, [tokenAddress, web3, fastRefresh])
+    }, [contract, fastRefresh])
 
     return supply
 }
 
 
 
-export default useTotalSupply
+const useTrxDone = (account) => {
+    const [trxDone, setTrxDone] = useState(false)
+    const web3 = useWeb3()
+    const { fastRefresh } = useRefresh()
+    const tokenAddress = environment.sscAddress;
+    const contract = getBep20Contract(tokenAddress, web3)
+    useEffect(async () => {
+        try {
+            if (account) {
+                const res = await contract.methods.trxDone(account).call()
+                setTrxDone(res)
+            }
+        } catch (error) {
+            return false;
+        }
 
-export { useTotalSupply };
+    }, [contract, fastRefresh, account])
+
+    return trxDone
+}
+
+
+const useWhitelistPhase = () => {
+    const [phase, setPhase] = useState(false)
+    const web3 = useWeb3()
+    const { fastRefresh } = useRefresh()
+    const tokenAddress = environment.sscAddress;
+    const contract = getBep20Contract(tokenAddress, web3)
+    useEffect(async () => {
+        const res = await contract.methods.whitelistedPhase().call()
+        setPhase(res)
+
+    }, [contract, fastRefresh])
+
+    return phase
+}
+
+
+const useSaleState = () => {
+    const [state, setState] = useState(true)
+
+    const web3 = useWeb3()
+    const { fastRefresh } = useRefresh()
+    const tokenAddress = environment.sscAddress;
+    const contract = getBep20Contract(tokenAddress, web3)
+    useEffect(async () => {
+        const res = await contract.methods.saleIsActive().call()
+        setState(res)
+
+    }, [contract, fastRefresh])
+
+    return state
+}
+
+
+
+
+
+export default useWhitelisted
+
+export { useWhitelisted, useTotalSupply, useTrxDone, useWhitelistPhase, useSaleState };

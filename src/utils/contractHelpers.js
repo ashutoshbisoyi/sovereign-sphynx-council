@@ -1,5 +1,5 @@
 import web3NoAccount from './web3'
-import yfEthAbi from './yfethAbi.json';
+import abiSSC from './abiSSC.json';
 
 
 const getContract = (abi, address, web3) => {
@@ -9,5 +9,5 @@ const getContract = (abi, address, web3) => {
 }
 
 export const getBep20Contract = (address, web3) => {
-    return getContract(yfEthAbi, address, web3)
+    return getContract(abiSSC, address, web3)
 }

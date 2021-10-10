@@ -1,5 +1,8 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
 .mint {
   background-color: #000000;
   padding: 120px 0;
@@ -30,17 +33,14 @@
     }
 
     .counter {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
       min-width: 200px;
       border: 2px solid $white;
       padding: 0.4em;
       border-radius: 5px;
       color: $white;
-    }
-
-    .counter {
-      display: inline-flex;
-      justify-content: space-between;
-      align-items: center;
     }
 
     .total {
@@ -54,7 +54,6 @@
       color: $white;
       padding: 0.2em;
       border-radius: 12px;
-
       button {
         position: relative;
         background-color: $dark;
@@ -72,6 +71,14 @@
       background-color: #000 !important;
       padding: 1em;
     }
+  }
+
+  button.verify {
+    background: $green;
+    padding: 1em;
+    color: $gray;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   .progress {
@@ -104,6 +111,17 @@
 }
 
 @media (max-width: 768px) {
+  .modal-container {
+    .custom-modal {
+      width: 85%;
+      margin: 100px auto;
+      .content {
+        button {
+          width: 90%;
+        }
+      }
+    }
+  }
   .mint {
     .img-container {
       img {
