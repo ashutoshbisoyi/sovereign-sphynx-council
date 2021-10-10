@@ -109,7 +109,6 @@ import gas_Mask from '../assets/rarity/gas_Mask.webp';
 import sans_Skull_Mask from '../assets/rarity/sans_Skull_Mask.webp';
 import meat from '../assets/rarity/meat.webp';
 import neme from '../assets/rarity/neme.webp';
-import turban from '../assets/rarity/turban.webp';
 import baseball_Cap_White from '../assets/rarity/baseball_Cap_White.webp';
 import baseball_Cap_Red from '../assets/rarity/baseball_Cap_Red.webp';
 import baseball_Cap_Blue from '../assets/rarity/baseball_Cap_Blue.webp';
@@ -1020,14 +1019,6 @@ const RarityData = [
     quantity: '215',
     rarity: 2.41,
     file: neme,
-    type: 'common',
-  },
-  {
-    name: 'Turban',
-    category: 'Head',
-    quantity: '215',
-    rarity: 2.43,
-    file: turban,
     type: 'common',
   },
   {
