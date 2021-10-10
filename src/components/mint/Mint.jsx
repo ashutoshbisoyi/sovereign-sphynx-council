@@ -3,10 +3,21 @@ import './Mint.scss';
 import plus from '../../assets/plus.svg';
 import minus from '../../assets/minus.svg';
 import StarBg from '../star-bg/StarBg';
+import { ToastContainer, toast } from 'react-toastify';
 const Mint = () => {
   const [count, setCount] = useState(1);
+  const [verified, setVerified] = useState(false);
+  //verify white list function
+  const verifyWhiteList = () => {
+    if (!verified) {
+      setVerified(true);
+      toast('You are verified');
+      setCount(20);
+    }
+  };
   return (
     <section className='container-fluid mint' id='mint'>
+      <ToastContainer />
       <StarBg />
       <div className='container'>
         <h2>Mint a Sphynx</h2>
@@ -22,12 +33,16 @@ const Mint = () => {
           </div>
 
           <button className='total'>Total: 0.08 Ξ </button>
-          <div className='gradient-container cta'>
-            <button className='primary'>Mint</button>
-          </div>
           <div className='gradient-container max'>
             <button>Max 20</button>
           </div>
+
+          <div className='gradient-container cta'>
+            <button className='primary'>Mint</button>
+          </div>
+          <button className='verify' onClick={verifyWhiteList}>
+            {verified ? 'You are verified' : 'Verify'}
+          </button>
         </div>
         <div className='progress'>
           <h5>0/8888</h5>

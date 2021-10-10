@@ -7,6 +7,7 @@ import Roadmap from './components/roadmap/Roadmap';
 import './styles/main.scss';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import 'react-toastify/dist/ReactToastify.css';
 import Faqs from './components/faqs/Faqs';
 import Team from './components/team/Team';
 import Footer from './components/footer/Footer';
