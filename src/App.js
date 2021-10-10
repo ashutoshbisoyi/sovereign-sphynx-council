@@ -13,7 +13,12 @@ import Footer from './components/footer/Footer';
 import Lunch from './components/lunch/Lunch';
 import Story from './components/story/Story';
 import Rarity from './components/rarity/Rarity';
+
+import useEagerConnect from './hooks/useEagerConnect'
+
 const App = () => {
+  useEagerConnect()
+
   return (
     <div>
       <NavigationBar />
