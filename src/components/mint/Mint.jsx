@@ -31,7 +31,7 @@ const Mint = () => {
           </div>
         </div>
         <div className='progress'>
-          <h5>15/8888</h5>
+          <h5>0/8888</h5>
           {/* change the width in style to change the progress level */}
           <div
             className='bar gradient-container'
