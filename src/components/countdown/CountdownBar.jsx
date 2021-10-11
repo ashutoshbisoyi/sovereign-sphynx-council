@@ -13,9 +13,9 @@ const CountdownBar = () => {
           hourTitle='Hours'
           minuteTitle='Minutes'
           secondTitle='Seconds'
-          endAt={new Date(2021, 9, 11, 20, 30, 0, 0)}
-          endAtZero
+          endAt={'2021-10-11 20:30:00'}
           titlePosition='bottom'
+          endAtZero
           size='medium'
         />
       </div>
