@@ -39,19 +39,29 @@ const Story = () => {
               <h2 className='mt-5'>The Utility</h2>
               <p>
                 Holding a Sovereign Sphynx NFT grants you a seat in the
-                Sovereign Sphynx Council.{' '}
+                Sovereign Sphynx Council.
               </p>
               <p>
-                Members of the Council are entitled to the following rewards:
+                Members of the Council have access to the following rewards:
               </p>
               <ul>
-                <li>A share of the ETH Bridge Fee Rewards Pool</li>
-                <li>A share of the OpenSea Royalties Rewards Pool</li>
-                <li>Merch Access</li>
+                <li>$SPHYNX Emissions from the Sphynx Bridge</li>
                 <li>
-                  Future NFT Airdrops that generate Rewards from other utilities
-                  in the Sphynx Ecosystem
+                  Access to the SPHYNX shop where owners will be able to buy
+                  Sphynx merch, and on top of that, the launch of the SPHYNX
+                  SHOP will bring added utility and perks for both $SPHYNX and
+                  the Genesis Sovereign Sphynxes.
                 </li>
+                <li>
+                  The ability for your Sphynx to “Ascend” or “Descend” by
+                  reading from a page of the Book of Life, or Book of Death.
+                  This ancient ritual requires massive amounts of energy, so 600
+                  $SPHYNX are required to complete the ritual.
+                </li>
+                <li>
+                  $SPHYNX is the utility token that fuels the Sphynx ecosystem.
+                </li>
+                <li>1 $SPHYNX = 1 $SPHYNX.</li>
               </ul>
             </div>
           </div>
