@@ -3,6 +3,8 @@ import './Footer.scss';
 import logo from '../../assets/logo.png';
 import discord from '../../assets/discord.png';
 import twitter from '../../assets/twitter.png';
+import opensea from '../../assets/opensea.png';
+
 const Footer = () => {
   return (
     <footer className='container-fluid footer'>
@@ -18,6 +20,14 @@ const Footer = () => {
           <a href='https://twitter.com/sphynxcouncil' target='_null'>
             <button>
               <img src={twitter} alt='discord' className='img-fluid' />
+            </button>
+          </a>
+          <a
+            href='https://opensea.io/collection/sovereignsphynxcouncilnft'
+            target='_null'
+          >
+            <button>
+              <img src={opensea} alt='opensea' className='img-fluid' />
             </button>
           </a>
         </div>

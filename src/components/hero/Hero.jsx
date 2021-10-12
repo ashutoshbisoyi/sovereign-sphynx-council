@@ -2,6 +2,7 @@ import React from 'react';
 import './Hero.scss';
 import discord from '../../assets/discord.png';
 import twitter from '../../assets/twitter.png';
+import opensea from '../../assets/opensea.png';
 import heroAnimation from '../../assets/hero.gif';
 const Hero = () => {
   return (
@@ -47,6 +48,19 @@ const Hero = () => {
                     />
                     <span className='d-none d-sm-inline'>Follow us on</span>{' '}
                     Twitter
+                  </button>
+                </a>
+                <a
+                  href='https://opensea.io/collection/sovereignsphynxcouncilnft'
+                  target='_null'
+                >
+                  <button>
+                    <img
+                      src={opensea}
+                      alt='discord'
+                      className='img-fluid me-2'
+                    />
+                    OpenSea
                   </button>
                 </a>
               </div>
