@@ -16,6 +16,24 @@
     margin: 0;
     li {
       margin-bottom: 1em;
+      ol {
+        list-style: none;
+        margin-top: 0.7em;
+        li {
+          position: relative;
+          color: #cccccc;
+          &::before {
+            content: url('../../assets/arrow-right.svg');
+            display: block;
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 50%;
+            left: -25px;
+            transform: translateY(-50%);
+          }
+        }
+      }
     }
   }
 }

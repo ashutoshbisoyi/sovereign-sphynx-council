@@ -6,14 +6,14 @@ const Story = () => {
     <section className='container-fluid story' id='story'>
       <div className='container'>
         <div className='row'>
-          <div className='col-12 col-md-6 d-flex justify-content-center align-items-center'>
+          <div className='col-12 col-lg-6 d-flex justify-content-center align-items-center'>
             <img
               src={animation}
               alt='why'
-              className='img-fluid mb-5 mb-md-0 mt-4'
+              className='img-fluid mb-5 mb-lg-0 mt-4'
             />
           </div>
-          <div className='col-12 col-md-6 d-flex align-items-center'>
+          <div className='col-12 col-lg-6 d-flex align-items-center'>
             <div className='content'>
               <h2>The Story</h2>
               <p>
@@ -41,27 +41,47 @@ const Story = () => {
                 Holding a Sovereign Sphynx NFT grants you a seat in the
                 Sovereign Sphynx Council.
               </p>
-              <p>
-                Members of the Council have access to the following rewards:
-              </p>
+              <p>Members of the Council get the following perks:</p>
               <ul>
-                <li>$SPHYNX Emissions from the Sphynx Bridge</li>
                 <li>
-                  Access to the SPHYNX shop where owners will be able to buy
-                  Sphynx merch, and on top of that, the launch of the SPHYNX
-                  SHOP will bring added utility and perks for both $SPHYNX and
-                  the Genesis Sovereign Sphynxes.
+                  Commercial and Intellectual Property Rights to Art depicting
+                  their Sphynx
                 </li>
                 <li>
-                  The ability for your Sphynx to “Ascend” or “Descend” by
-                  reading from a page of the Book of Life, or Book of Death.
-                  This ancient ritual requires massive amounts of energy, so 600
-                  $SPHYNX are required to complete the ritual.
+                  Exclusive Access to the Upcoming Sphynx Comic featuring SSC
+                  NFTs
+                  <ol>
+                    <li>All holders will receive physical copies</li>
+                  </ol>
                 </li>
                 <li>
-                  $SPHYNX is the utility token that fuels the Sphynx ecosystem.
+                  Exclusive Access to the SSC Holders Community
+                  <ol>
+                    <li>Access to Partnerships with other NFT projects</li>
+                    <li>Private Chats and AMAs with the Artist and Founders</li>
+                    <li>
+                      Private Chats and AMAs with experienced Crypto and NFT
+                      Investors
+                    </li>
+                  </ol>
                 </li>
-                <li>1 $SPHYNX = 1 $SPHYNX.</li>
+                <li>
+                  Exclusive Access to the Sphynx Shop to purchase:
+                  <ol>
+                    <li>Sphynx Merch</li>
+                    <li>Physical collectibles of your Sphynx NFT(s)</li>
+                  </ol>
+                </li>
+                <li>Exclusive Access to the Upcoming Sphynx game</li>
+                <li>
+                  Future SSC NFT Drops
+                  <ol>
+                    <li>
+                      SSC Holders will have Free Mint Access (just cover gas)
+                    </li>
+                  </ol>
+                </li>
+                <li>BONUS Access to Rewards from the Sphynx Ecosystem</li>
               </ul>
             </div>
           </div>
