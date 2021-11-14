@@ -1,0 +1,2 @@
+(this["webpackJsonpsovereign-sphynx-council"]=this["webpackJsonpsovereign-sphynx-council"]||[]).push([[4],{1041:function(n,c){},931:function(n,c){},972:function(n,c){}}]);
+//# sourceMappingURL=4.872430e0.chunk.js.map
