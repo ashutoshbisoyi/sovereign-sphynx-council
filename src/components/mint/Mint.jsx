@@ -25,7 +25,8 @@ const Mint = () => {
 
   const whitelisted = useWhitelisted(account);
   const trxDone = useTrxDone(account);
-  const supply = useTotalSupply();
+  // const supply = useTotalSupply();
+  const supply = 0;
   const whitelistPhase = useWhitelistPhase();
   const saleState = useSaleState();
 
@@ -165,7 +166,9 @@ const Mint = () => {
             ></div>
           </div>
           <div className='progress'>
-            <h5 className='text-dark fw-bold'>2083 Genesis Sphynxes Minted</h5>
+            <h5 className='text-dark fw-bold mint-message'>
+              2083 Genesis Sphynxes Minted
+            </h5>
             {/* change the width in style to change the progress level */}
             <div
               className='minted bar'
