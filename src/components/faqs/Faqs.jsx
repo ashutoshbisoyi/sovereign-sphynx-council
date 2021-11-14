@@ -5,33 +5,29 @@ const Faqs = () => {
   const faqs = [
     {
       question: 'What is the total supply?',
-      answer: <p>A total of 8888 unique Sphynx NFTs will be created.</p>,
+      answer: (
+        <p>
+          There are 2,083 Genesis Sphynxes, and 6,805 Scion Sphynxes, making up
+          a total of 8,888 unique Sovereign Sphynx Council NFTs.
+        </p>
+      ),
     },
     {
       question: 'When is the launch?',
-      answer: <p>We will launch on October 11, 3pm UTC</p>,
+      answer: (
+        <p>
+          The Scion Sphynx SSC Collection will launch on November, 21 at 1:00 AM
+          UTC
+        </p>
+      ),
     },
     {
-      question: 'How much does it cost to mint an NFT?',
-      answer: <p>0.08 ETH + gas.</p>,
+      question: 'How much will it cost to mint a Scion Sphynx?',
+      answer: <p>0.5 BNB + gas</p>,
     },
     {
       question: 'Will there be a Presale?',
-      answer: (
-        <div>
-          <p>Our Sale will take place in 3 Phases</p>
-          <ol>
-            <li>Whitelist Registration - Open until 10/11 at 8:00am UTC</li>
-            <li>Whitelisted Sale - 10/11 at 3:00pm UTC</li>
-            <li>Public Sale - 10/11 at 4:00pm UTC</li>
-          </ol>
-          <p>
-            We are taking this approach to reward the most active, engaged, and
-            supportive members of our Community, and to avoid potential Gas
-            wars.
-          </p>
-        </div>
-      ),
+      answer: <p> No, there will not be a Presale.</p>,
     },
   ];
   return (

@@ -4,8 +4,8 @@ const Lunch = () => {
   return (
     <section className='container-fluid lunch'>
       <div className='container'>
-        <h2>The Great Mintening</h2>
-        <p>11th October 2021 | 3:00 P.M. UTC</p>
+        <h2>The Scions Awakening</h2>
+        <p>21th November 2021 | 1:00 A.M. UTC</p>
       </div>
     </section>
   );

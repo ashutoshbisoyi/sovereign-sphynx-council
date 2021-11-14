@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+.types {
+  padding: 5em 0;
+  h2 {
+    margin-bottom: 2em;
+    text-align: center;
+    color: $green;
+    font-size: 2.3em;
+  }
+  .type-card {
+    position: relative;
+    text-align: center;
+    @include gradientAnimation;
+    // background-color: rebeccapurple;
+    padding: 0.2em;
+    .content {
+      height: 100%;
+      background-color: $dark;
+      position: relative;
+      z-index: 9;
+      padding: 0 2em 3em;
+      .head {
+        background-color: #000000;
+        padding: 1em 1em 2em;
+        h4 {
+          color: $green;
+          font-weight: bold;
+        }
+      }
+      img {
+        max-width: 200px;
+        margin: 2em 0;
+      }
+      p {
+        margin: 0;
+        min-height: 160px;
+      }
+    }
+  }
+}
