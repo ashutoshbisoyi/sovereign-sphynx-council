@@ -22,25 +22,30 @@ const Roadmap = () => {
     {
       amount: 0,
       completed: true,
-      text: 'The Great Mintening – After Slumbering For 5 Milennia, The Sovereign Sphynxes Awaken To Celebrate The Completion Of The Bridge And Marketplace By Re-Assembling The Sovereign Sphynx Council',
+      text: 'The Great Mintening – After slumbering for 5 Milennia, the Genesis Sovereign Sphynxes awaken to celebrate the construction of the ETH Bridge by Re-convening the Sovereign Sphynx Council.',
     },
     {
       amount: 10,
-      completed: false,
-      text: 'First Dividend Payouts The First Dividends From Sphynx Bridge Are Paid Out Live On Discord The First Dividends From Sphynx Secondary Market Are Paid Out Live On Discord',
+      completed: true,
+      text: 'The Scions Awakening – After the Great Mintening, the 2,083 Genesis Sovereign Sphynxes declare war on the Rug Doctors and disgraced Pharoahs. Reinforcements are needed, and the Scions are awakened.',
     },
     {
       amount: 25,
       completed: false,
-      text: 'The Sphynxes Receive The Book Of Life During Their Commemoration Of The Stream And NFT Marketplace First Dividends From The Marketplace Are Paid Out Live On Discord',
+      text: 'First Dividend Payouts The First Dividends From Sphynx Bridge Are Paid Out Live On Discord The First Dividends From Sphynx Secondary Market Are Paid Out Live On Discord',
     },
     {
       amount: 50,
       completed: false,
-      text: 'Sphynxes Receive The Book Of The Dead As The Wallet Opens',
+      text: 'The Sphynxes Receive The Book Of Life During Their Commemoration Of The Stream And NFT Marketplace First Dividends From The Marketplace Are Paid Out Live On Discord',
     },
     {
       amount: 75,
+      completed: false,
+      text: 'Sphynxes Receive The Book Of The Dead As The Wallet Opens',
+    },
+    {
+      amount: 95,
       completed: false,
       text: 'The Sphynxes Reclaim Their Sarcophagi Sphynxes Are Eternal: Gen 2 Teaser',
     },

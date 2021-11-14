@@ -13,7 +13,7 @@ const Hero = () => {
             <div className='content'>
               <h1>
                 What is the <br className='d-none d-md-block' /> Sovereign
-                Sphynx Council
+                Sphynx Council?
               </h1>
               <p>
                 The Sovereign Sphynx Council are 8,888 Generative Sphynxes with
@@ -23,9 +23,10 @@ const Hero = () => {
                 unite the Great Chains.
               </p>
               <p>
-                The Sovereign Sphynxes are stored as ERC-721 tokens on the
-                Ethereum and are hosted on IPFS. Yes, they’re tamper-proof and
-                last forever.
+                The Genesis Sovereign Sphynxes are stored as ERC-721 tokens on
+                the Ethereum and are hosted on IPFS. Scion Sphynxes are stored
+                as BEP-721 tokens on the Binance Smart Chain, and are hosted on
+                IPFS. Yes, they’re tamper-proof and last forever.
               </p>
               <div className='btn-container'>
                 <a href='https://discord.gg/ZEuDaFk4qz' target='_null'>

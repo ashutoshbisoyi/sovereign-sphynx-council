@@ -6,7 +6,7 @@ import 'moment-timezone';
 const CountdownBar = () => {
   var tz = moment.tz.guess();
   const variableTime = moment
-    .utc('2021-10-11 15:00')
+    .utc('2021-11-21 1:00')
     .tz(tz)
     .format('YYYY-MM-DD HH:MM:SS');
   return (
