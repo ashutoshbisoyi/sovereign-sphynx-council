@@ -1,7 +1,7 @@
 import React from 'react';
 import './Types.scss';
-import genesis from '../../assets/genesis.jfif';
-import scion from '../../assets/scion.jfif';
+import genesis from '../../assets/genesis.jpeg';
+import scion from '../../assets/scion.jpeg';
 const Types = () => {
   const data = [
     {
