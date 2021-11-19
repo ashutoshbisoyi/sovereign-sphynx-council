@@ -1,17 +1,16 @@
 import React from 'react';
 import FlipCountdown from '@rumess/react-flip-countdown';
 import './CountdownBar.scss';
-import moment from 'moment';
-import 'moment-timezone';
+// import moment from 'moment';
+// import 'moment-timezone';
 const CountdownBar = () => {
-  var tz = moment.tz.guess();
-  const variableTime = moment
-    .utc('2021-11-21 1:00')
-    .tz(tz)
-    .format('YYYY-MM-DD HH:MM:SS');
+  // var tz = moment.tz.guess();
+  // const variableTime = moment
+  //   .utc('2021-11-23 6:50:00')
+  //   .format('YYYY-MM-DD HH:MM:SS');
   return (
     <div className='countdown-bar'>
-      <h3>LAUNCHING 10/11 3PM UTC</h3>
+      <h3>LAUNCHING 23/11 1 A.M. UTC</h3>
       <div className='time-container'>
         <FlipCountdown
           hideYear
@@ -20,7 +19,7 @@ const CountdownBar = () => {
           hourTitle='Hours'
           minuteTitle='Minutes'
           secondTitle='Seconds'
-          endAt={variableTime}
+          endAt='2021-11-23 6:30:00'
           titlePosition='bottom'
           endAtZero
           size='medium'
