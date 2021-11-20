@@ -15,13 +15,9 @@ import Lunch from './components/lunch/Lunch';
 import Story from './components/story/Story';
 import Rarity from './components/rarity/Rarity';
 import CountdownBar from './components/countdown/CountdownBar';
-
-import useEagerConnect from './hooks/useEagerConnect';
 import Types from './components/types/Types';
 
 const App = () => {
-  useEagerConnect();
-
   return (
     <div>
       <CountdownBar />

@@ -1,117 +1,14 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import './Mint.scss';
 import plus from '../../assets/plus.svg';
 import minus from '../../assets/minus.svg';
 import StarBg from '../star-bg/StarBg';
-import { ToastContainer, toast } from 'react-toastify';
-import { useWeb3React } from '@web3-react/core';
-import {
-  useWhitelisted,
-  useTotalSupply,
-  useTrxDone,
-  useWhitelistPhase,
-  useSaleState,
-} from '../../hooks/dataFetcher';
-import useMint from '../../hooks/useMint';
+import { ToastContainer } from 'react-toastify';
 
 const Mint = () => {
-  const [pendingTx, setPendingTx] = React.useState(false);
-  const { account } = useWeb3React();
-
-  const { mint } = useMint();
-
   const [count, setCount] = useState(1);
   const total = count * 0.5;
-
-  const whitelisted = useWhitelisted(account);
-  const trxDone = useTrxDone(account);
-  // const supply = useTotalSupply();
   const supply = 0;
-  const whitelistPhase = useWhitelistPhase();
-  const saleState = useSaleState();
-
-  const Mint = useCallback(
-    async (e) => {
-      e.preventDefault();
-      if (!account) {
-        toast.error('Please Connect Your Wallet');
-        return;
-      }
-      if (!saleState) {
-        toast.error('Sale is not Active');
-        return;
-      }
-
-      if (count > 20) {
-        toast.error('Can Only Mint 20 or less in one Transaction');
-        return;
-      }
-      if (whitelistPhase) {
-        if (!whitelisted) {
-          toast.error('You are not Whitelisted');
-          return;
-        }
-        if (trxDone) {
-          toast.error('You have Already Done Your One Transaction');
-          return;
-        }
-      }
-
-      setPendingTx(true);
-      try {
-        await mint(count);
-      } catch (error) {
-        console.log(error);
-        setPendingTx(false);
-      } finally {
-        setPendingTx(false);
-      }
-    },
-    [mint]
-  );
-
-  const MintMax = useCallback(
-    async (e) => {
-      e.preventDefault();
-      if (!account) {
-        toast.error('Please Connect Your Wallet');
-        return;
-      }
-
-      if (!saleState) {
-        toast.error('Sale is not Active');
-        return;
-      }
-
-      if (whitelistPhase) {
-        if (!whitelisted) {
-          toast.error('You are not Whitelisted');
-          return;
-        }
-        if (trxDone) {
-          toast.error('You have Already Done Your One Transaction');
-          return;
-        }
-      }
-      setCount(20);
-      setPendingTx(true);
-      try {
-        await mint(20);
-      } catch (error) {
-        console.log(error);
-        setPendingTx(false);
-      } finally {
-        setPendingTx(false);
-      }
-    },
-    [mint]
-  );
-
-  //to use if varification failed
-  // const handleFailedVerify = () => {
-  //   toast.error('You are not Whitelisted');
-  //   setVerified(false);
-  // };
 
   return (
     <>
@@ -140,7 +37,7 @@ const Mint = () => {
 
             <button className='total'>Total: {total} BNB </button>
             <div className='gradient-container max'>
-              <button onClick={MintMax}>Max 20</button>
+              <button>Max 20</button>
             </div>
 
             <div className='gradient-container cta'>

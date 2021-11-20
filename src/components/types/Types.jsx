@@ -8,7 +8,7 @@ const Types = () => {
       title: 'Genesis Sphynxes',
       image: genesis,
       content:
-        'The OG Sphynxes, these were the first 2,083 to drop, __ of which are Pharoahs, and ___ are Legendary. They are also the only Sovereign Sphynxes to yield rewards from the Ether Bridge. Each Sovereign Sphynx will generate yield from the Ether Bridge transaction fees.',
+        'The OG Sphynxes, these were the first 2,083 to drop. They are also the only Sovereign Sphynxes to yield rewards from the Ether Bridge. Each Sovereign Sphynx will generate yield from the Ether Bridge transaction fees.',
     },
     {
       title: 'Scion Sphynxes',
