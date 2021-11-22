@@ -55,11 +55,11 @@ const Mint = () => {
           </div>
 
           <div className='progress'>
-            <h5>{supply}/6,805</h5>
+            <h5>{supply}/3,333</h5>
             {/* change the width in style to change the progress level */}
             <div
               className='bar gradient-container'
-              style={{ width: `${(supply / 6805) * 100}%` }}
+              style={{ width: `${(supply / 3333) * 100}%` }}
             ></div>
           </div>
           <div className='progress'>

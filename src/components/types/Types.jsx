@@ -14,7 +14,7 @@ const Types = () => {
       title: 'Scion Sphynxes',
       image: scion,
       content:
-        'In order to expand the Sovereign Sphynx Universe, the Great Pharoah Akhenaten used the Sphynx Pad hail for reinforcements from the Binance Smart Chain. The SSC must raise their numbers to 8,888 Sphynxes before they cross the great Ether Bridge, and have called for 6,805 Scion Sphynxes to awaken. Their awakening requires a great deal of energy – so, 0.5 BNB are required to raise each Scion Sphynx from their slumber.',
+        'In order to expand the Sovereign Sphynx Universe, the Great Pharoah Akhenaten used the Sphynx Pad hail for reinforcements from the Binance Smart Chain. The SSC must raise their numbers to 3,333 Sphynxes before they cross the great Ether Bridge, and have called for 6,805 Scion Sphynxes to awaken. Their awakening requires a great deal of energy – so, 0.5 BNB are required to raise each Scion Sphynx from their slumber.',
     },
   ];
   return (
