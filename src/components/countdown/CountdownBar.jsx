@@ -19,7 +19,7 @@ const CountdownBar = () => {
           hourTitle='Hours'
           minuteTitle='Minutes'
           secondTitle='Seconds'
-          endAt={'2021-11-23 21:15:00'}
+          endAt={'2021-11-23 21:31:00'}
           titlePosition='bottom'
           endAtZero
           size='medium'
