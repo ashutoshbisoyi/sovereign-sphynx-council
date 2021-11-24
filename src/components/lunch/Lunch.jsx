@@ -5,7 +5,7 @@ const Lunch = () => {
     <section className='container-fluid lunch'>
       <div className='container'>
         <h2>The Scions Awakening</h2>
-        <p>23rd November 2021 | 1:00 A.M. UTC</p>
+        <p>24th November 2021 | 4:00 P.M. UTC</p>
       </div>
     </section>
   );
