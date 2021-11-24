@@ -10,7 +10,7 @@ const CountdownBar = () => {
   //   .format('YYYY-MM-DD HH:MM:SS');
   return (
     <div className='countdown-bar'>
-      <h3>LAUNCHING 23/11 1 A.M. UTC</h3>
+      <h3>LAUNCHING 24/11 4 P.M. UTC</h3>
       <div className='time-container'>
         <FlipCountdown
           hideYear
@@ -19,7 +19,7 @@ const CountdownBar = () => {
           hourTitle='Hours'
           minuteTitle='Minutes'
           secondTitle='Seconds'
-          endAt={'2021-11-23 6:30:00'}
+          endAt={'2021-11-24 21:30:00'}
           titlePosition='bottom'
           endAtZero
           size='medium'
