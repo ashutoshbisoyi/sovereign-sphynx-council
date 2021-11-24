@@ -20,10 +20,15 @@ const Mint = () => {
             <button className='total'>Total: {total} BNB </button>
 
             <div className='gradient-container cta'>
-              <button className='primary' onClick={Mint}>
-                Purchase
-              </button>
+              <a
+                href='https://sphynx.anvil.app/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <button className='primary'>Purchase</button>
+              </a>
             </div>
+
             {/* {whitelistPhase ? (
               <div className='gradient-container max'>
                 <button>
