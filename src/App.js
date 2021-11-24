@@ -20,7 +20,6 @@ import Types from './components/types/Types';
 const App = () => {
   return (
     <div>
-      <CountdownBar />
       <NavigationBar />
       <GradientAnimation />
       <Hero />
