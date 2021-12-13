@@ -11,20 +11,22 @@ import 'react-toastify/dist/ReactToastify.css';
 import Faqs from './components/faqs/Faqs';
 import Team from './components/team/Team';
 import Footer from './components/footer/Footer';
-import Lunch from './components/lunch/Lunch';
+// import Lunch from './components/lunch/Lunch';
 import Story from './components/story/Story';
 import Rarity from './components/rarity/Rarity';
+import CountdownBar from './components/countdown/CountdownBar';
 import Types from './components/types/Types';
 
 const App = () => {
   return (
     <div>
+      <CountdownBar />
       <NavigationBar />
       <GradientAnimation />
       <Hero />
       <Types />
       <Story />
-      <Lunch />
+      {/* <Lunch /> */}
       <Mint />
       <Roadmap />
       <Rarity />
