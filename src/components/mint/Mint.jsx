@@ -1,14 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import './Mint.scss';
 import StarBg from '../star-bg/StarBg';
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import plus from '../../assets/plus.svg';
 import minus from '../../assets/minus.svg';
+import { useTotalSupply, useWhitelisted, useSaleState, useWhitelistPhase } from '../../hooks/dataFetcher';
+import useMint from '../../hooks/useMint';
+import { useWeb3React } from '@web3-react/core';
+
 
 const Mint = () => {
+
+  const { account } = useWeb3React();
   const [count, setCount] = useState(1);
   const total = count * 0.5;
-  const supply = 0;
+  const supply = useTotalSupply()
+  const { mint } = useMint();
+  const price = 0.5;
+
+
+  const Mint = useCallback(async (e) => {
+    e.preventDefault();
+    if (!account) {
+      toast.error('Please Connect Your Wallet');
+      return;
+    }
+
+
+    try {
+      await mint(count, price)
+    } catch (error) {
+      console.log(error)
+    }
+  }, [mint])
+
 
   return (
     <>
@@ -22,14 +47,14 @@ const Mint = () => {
             <div className='counter'>
               <button
                 className='visible'
-                onClick={() => count >= 1 && setCount(count - 1)}
+                onClick={() => count > 1 && setCount(count - 1)}
               >
                 <img src={minus} alt='minus' className='img-fluid' />
               </button>
               <span>{count}</span>
               <button
                 className='visible'
-                onClick={() => count <= 19 && setCount(count + 1)}
+                onClick={() => count < 20 && setCount(count + 1)}
               >
                 <img src={plus} alt='minus' className='img-fluid' />
               </button>
@@ -41,27 +66,20 @@ const Mint = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                <button className='primary'>Mint</button>
+                <button className='primary' onClick={Mint}>Mint</button>
               </a>
             </div>
-            {/* {whitelistPhase ? (
-              <div className='gradient-container max'>
-                <button>
-                  {whitelisted ? 'You are Whitelisted' : 'Not Whitelisted'}
-                </button>
-              </div>
-            ) : null} */}
           </div>
           <div className='progress'>
-            <h5>{supply}/3333</h5>
+            <h5>{supply}/6805</h5>
             <div
               className='bar gradient-container'
-              style={{ width: `${(supply / 3333) * 100}%` }}
+              style={{ width: `${(supply / 6805) * 100}%` }}
             ></div>
           </div>
           <div className='progress'>
             <h5 className='text-dark fw-bold mint-message'>
-              2083 Genesis Sphynxes Minted
+              6805 Genesis Sphynxes Minted
             </h5>
             {/* change the width in style to change the progress level */}
             <div
