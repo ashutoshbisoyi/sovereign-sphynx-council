@@ -163,6 +163,19 @@
     },
     {
         "inputs": [],
+        "name": "baseuri",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
         "name": "decimals",
         "outputs": [
             {
@@ -252,6 +265,19 @@
             }
         ],
         "name": "isAuth",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "mintEnabled",
         "outputs": [
             {
                 "internalType": "bool",
@@ -532,7 +558,7 @@
                 "type": "uint256"
             }
         ],
-        "stateMutability": "pure",
+        "stateMutability": "view",
         "type": "function"
     },
     {
