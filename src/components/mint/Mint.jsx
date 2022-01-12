@@ -61,13 +61,7 @@ const Mint = () => {
             </div>
             <button className='total'>Total: {total} BNB </button>
             <div className='gradient-container cta'>
-              <a
-                href='https://sphynx.anvil.app/'
-                target='_blank'
-                rel='noreferrer'
-              >
                 <button className='primary' onClick={Mint}>Mint</button>
-              </a>
             </div>
           </div>
           <div className='progress'>
