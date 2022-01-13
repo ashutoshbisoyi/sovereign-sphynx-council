@@ -73,7 +73,7 @@ const Mint = () => {
           </div>
           <div className='progress'>
             <h5 className='text-dark fw-bold mint-message'>
-              6805 Genesis Sphynxes Minted
+              2083 Genesis Sphynxes Minted
             </h5>
             {/* change the width in style to change the progress level */}
             <div
