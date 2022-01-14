@@ -14,7 +14,6 @@ import Footer from './components/footer/Footer';
 // import Lunch from './components/lunch/Lunch';
 import Story from './components/story/Story';
 import Rarity from './components/rarity/Rarity';
-import CountdownBar from './components/countdown/CountdownBar';
 import Types from './components/types/Types';
 import useEagerConnect from './hooks/useEagerConnect';
 
@@ -23,7 +22,6 @@ const App = () => {
 
   return (
     <div>
-      <CountdownBar />
       <NavigationBar />
       <GradientAnimation />
       <Hero />
