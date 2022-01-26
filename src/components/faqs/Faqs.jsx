@@ -16,7 +16,7 @@ const Faqs = () => {
       question: 'When is the launch?',
       answer: (
         <p>
-          The Scion Sphynx SSC Collection will launch on November, 21 at 1:00 AM
+          The Scion Sphynx SSC Collection will launch on January, 12 at 1:00 AM
           UTC
         </p>
       ),
