@@ -16,7 +16,7 @@ const Hero = () => {
                 Sphynx Council?
               </h1>
               <p>
-                The Sovereign Sphynx Council are 8,888 Generative Sphynxes with
+                The Sovereign Sphynx Council are 1,000 Generative Sphynxes with
                 over 150 hand-drawn features battling for supremacy within the
                 Web3 multi-verse. Through unity, ingenuity, and relentless
                 resolve, they have set out to restore their realm to glory and
